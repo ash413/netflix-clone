@@ -58,7 +58,7 @@ const Signup = () => {
                   autoComplete='current-password'
                 />
                 {errors.password && <p className='text-red-500'>{errors.password._errors.join(', ')}</p>}
-                <button className='bg-red-600 py-3 my-6 rounded font-bold'>Sign Up</button>
+                <button onClick={() => navigate('/')} className='bg-red-600 py-3 my-6 rounded font-bold'>Sign Up</button>
                 <div className='flex justify-between items-center text-sm text-gray-600'>
                   <p><input className='mr-2' type="checkbox" />Remember Me</p>
                   <p>Need Help?</p>

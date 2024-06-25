@@ -50,7 +50,7 @@ const Login = () => {
                 {errors.email && <p className='text-red-500'>{errors.email._errors.join(', ')}</p>}
                 <input onChange={(e) => setPassword(e.target.value)} className='p-3 my-2 bg-gray-700 rounded' type="password" placeholder='Password' autoComplete='current-password'/>
                 {errors.password && <p className='text-red-500'>{errors.password._errors.join(', ')}</p>} 
-                <button className='bg-red-600 py-3 my-6 rounded font-bold'>Sign In</button>
+                <button onClick={() => navigate('/')} className='bg-red-600 py-3 my-6 rounded font-bold'>Sign In</button>
                 <div className='flex justify-between items-center text-sm text-gray-600'>
                   <p><input className='mr-2' type="checkbox" />Remember Me</p>
                   <p>Need Help?</p>
